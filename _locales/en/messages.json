@@ -1,6 +1,6 @@
 {
   "ext_name": {
-    "message": "Catch 22",
+    "message": "Charity Pomodoro",
     "description": "Name of the extension"
   },
   "ext_description": {
@@ -22,16 +22,20 @@
   },
   
   "site_blocked_info": {
-    "message": "Page blocked until a Pomodoro break timer starts.",
+    "message": "This page blocked until a Pomodoro break timer starts.",
     "description": "Text for the blocked-site overlay, explaining that the site is blocked and when it will become unblocked"
   },
   "site_blocked_motivator": {
     "message": "Back to work!",
     "description": "Text for the blocked-site overlay, motivating the user to get back to work"
   },
-  
+  "site_blocked_charitymessage": {
+    "message": "Alternatively, you could donate to a charity today to get access now.",
+    "description": "Text for the blocked-site overlay, motivating the user to get back to work"
+  },
+
   "options_title": {
-    "message": "Catch 22 Options",
+    "message": "Charity Pomodoro Options",
     "description": "The title of the options page"
   },
   "options_blacklist_verb": {

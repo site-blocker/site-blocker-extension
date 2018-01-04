@@ -1,14 +1,10 @@
-var time = import("../background.js");
-let timer = console.log(time.Pomodoro.Timer.timeRemainingString());
-
-
 (function () {
-  timer
   function ready() {
     if(!document.getElementById('matchu-pomodoro-extension-overlay')) {
       var overlay = document.createElement('div'), lines = [
         chrome.i18n.getMessage("site_blocked_info"),
         chrome.i18n.getMessage("site_blocked_motivator"),
+        "Alternatively, you could donate to a charity today to get access now."
       ], p, underlayEls, img = document.createElement('img');
       overlay.id = 'matchu-pomodoro-extension-overlay';
       overlay.style.position = 'fixed';
@@ -24,16 +20,31 @@ let timer = console.log(time.Pomodoro.Timer.timeRemainingString());
       overlay.style.font = 'normal normal normal 16px/1 sans-serif';
       
       img.src = chrome.extension.getURL('icons/work_full.png');
-      img.style.marginBottom = '1em';
+      img.style.marginBottom = '2em';
+      // img.style.width = '100%';
+      // img.style.height = '100%';
       overlay.appendChild(img);
       
       for(var i in lines) {
         p = document.createElement('p');
         p.innerText = lines[i];
-        p.style.margin = '0 0 .5em 0';
+        p.style.margin = '0 0 1em 0';
+        p.style.fontSize = "x-large";
         overlay.appendChild(p);
       }
       document.body.appendChild(overlay);
+      
+      var button = document.createElement("button");
+      overlay.appendChild(button);
+      button.innerHTML = "Donate";
+      button.style.fontSize = "large";
+      button.style.width = "200px"
+      button.style.height = "50px"
+      button.style.color = '#FF4127';
+      
+      button.addEventListener ("click", function() {
+        alert("cha-ching");
+      });
 
       // Add a minimal blur effect to the blocked page
       underlayEls = document.querySelectorAll("body > *:not(#matchu-pomodoro-extension-overlay)");
@@ -53,5 +64,6 @@ let timer = console.log(time.Pomodoro.Timer.timeRemainingString());
     ready();
   }
 })();
+
 
 
