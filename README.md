@@ -1,4 +1,7 @@
 # trumpodoro
+![alt text](https://github.com/trumpodoro/trumpodoro/raw/master/Trumpodoro/ico/Trumpo.png "Logo Title Text 1")
+
+
 What if you could harness the power of the Donald Trump personality to focus on work? Well, now you can!
 
 Our pundits screamed at each other until they created a website-blocking pomodoro timer powered by the Commander in Chief himself. 
