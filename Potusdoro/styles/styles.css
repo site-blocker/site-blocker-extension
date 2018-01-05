@@ -53,7 +53,7 @@ table {
  */
 
 body {
-  background: #2980b9;
+  background: #FFFFFF;
   width: 420px;
   height: 420px;
 }
@@ -80,22 +80,24 @@ Title
 */
 
 .title {
-  color: #ffffff;
+  color: #EC5840;
   text-align: center;
   font: 300 40px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
   letter-spacing: 1px;
   text-transform: capitalize;
+  font-weight: bold;
   height: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .sub-title {
-  color: #ffffff;
+  color: #F3C155;
   text-align: center;
   font: 300 10px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-weight: bold;
   margin: 5px auto 15px auto;
 }
 
@@ -106,8 +108,9 @@ Timer Inputs
 */
 
 label {
-  color: #ffffff;
+  color: #EC5840;
   font: 300 18px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -127,7 +130,7 @@ label {
 .inc,
 .dec,
 .save {
-  background-color: #7f8c8d;
+  background-color: #FFFFFF;
 }
 
 .break,
@@ -136,7 +139,7 @@ label {
   text-align: center;
   border: none;
   border-radius: 5px;
-  background-color: #e0ebeb;
+  background-color: #F3C155;
   font-size: 16px;
   padding: 5px;
   font-weight: bold;
@@ -145,8 +148,8 @@ label {
 .timer-element:focus {
   transition: .25s;
   outline: none;
-  background: #34495e;
-  color: #ffffff;
+  background: #F3C155;
+  color: #EC5840;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -164,7 +167,7 @@ Timer
 .timer {
   text-align: center;
   margin: 20px auto;
-  border: 5px solid #2ecc71;
+  border: 5px solid #EC5840;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -175,7 +178,8 @@ Timer
   vertical-align: middle;
   display: table-cell;
   font: 400 30px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
-  color: #ffffff;
+  font-weight: bold;
+  color: #000000;
   padding: 0;
   letter-spacing: 2px;
 }
@@ -194,7 +198,7 @@ Submit
   border-radius: 5px;
   font: 400 30px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
   background: none;
-  color: #ffffff;
+  color: #EC5840;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
@@ -204,16 +208,16 @@ Submit
 
 #submit:focus {
   outline: none;
-  color: #ffffff;
+  color: #EC5840;
   text-align: center;
 }
 
 input[value='Start']:hover {
-  color: #27AE60;
+  color: #F3C155;
 }
 
 input[value='Stop']:hover {
-  color: #C0392B;
+  color: #F3C155;
 }
 
 /*
@@ -232,8 +236,7 @@ Volume
 .btn-default:active,
 .btn-default:visited,
 .btn-default:focus {
-    background-color: #7f8c8d;
-    border-color: #7f8c8d;
+    background-color: #F3C155;
 }
 
 /*
@@ -272,8 +275,7 @@ Repeat/Refresh/Block/Sites
 .btn-info:active,
 .btn-info:visited,
 .btn-info:focus {
-    background-color: #1abc9c;
-    border-color: #1abc9c;
+    background-color: #EC5840;
 }
 
 .form-control {
@@ -349,7 +351,7 @@ Blocked Sites Page
 }
 
 body {
-  background: #2980b9;
+  background: #FFFFFF;
   width: 420px;
   height: 420px;
 }
