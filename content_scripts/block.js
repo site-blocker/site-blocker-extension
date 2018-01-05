@@ -6,6 +6,7 @@
         chrome.i18n.getMessage("site_blocked_motivator"),
         "Alternatively, you could donate to a charity today to get access now."
       ], p, underlayEls, img = document.createElement('img');
+
       overlay.id = 'matchu-pomodoro-extension-overlay';
       overlay.style.position = 'fixed';
       overlay.style.left = 0;
@@ -43,8 +44,22 @@
       button.style.color = '#FF4127';
       
       button.addEventListener ("click", function() {
-        alert("cha-ching");
+        alert("exchange made");
+
+        chrome.tabs.executeScript(null,
+          {file:"/unblock.js"});
+
+
       });
+
+
+//       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+// <input type="hidden" name="cmd" value="_s-xclick">
+// <input type="hidden" name="hosted_button_id" value="JFZ4LL8WR895J">
+// </form>
+
+
+
 
       // Add a minimal blur effect to the blocked page
       underlayEls = document.querySelectorAll("body > *:not(#matchu-pomodoro-extension-overlay)");

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blocked Websites</title>
+    <link href="Flat-UI/dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Flat-UI/dist/css/flat-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <label class="text-label">Blocked Sites</label>
+        <p class="block-description">
+          Sites to block while in focus mode. <br />Each URL must be on its own line.
+        </p>
+        <textarea class="form-control" id="blocked-sites" rows="6" placeholder="https://www.distractingsite.com/&#x0a;https://breakmyfocus.com/"></textarea>
+      </div>
+      <button title="Save List of Sites to Block" class="save button btn btn-primary btn-number btn-xs" id="save-btn">
+        <span class="glyphicon glyphicon-floppy-disk"></span>
+      </button>
+      <button title="Enable or Disable Blocked Websites" class="btn btn-info btn-wide" id="block-btn"></button>
+      <a title="Timer" href="./popup.html" id="timer-arrow-icon"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    </div>
+  </body>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./Flat-UI/dist/js/flat-ui.min.js"></script>
+  <script src="./Flat-UI/docs/assets/js/application.js"></script>
+  <script src="./jquery.hotkeys/jquery.hotkeys.js"></script>
+  <script src="./js/website-background.js"></script>
+  <script src="./js/websites.js"></script>
+</html>

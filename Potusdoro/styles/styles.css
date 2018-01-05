@@ -1,0 +1,369 @@
+* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ ===============================
+ Custom Syles
+ ===============================
+ */
+
+body {
+  background: #2980b9;
+  width: 420px;
+  height: 420px;
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  width: 50%;
+}
+
+a:focus{
+  text-decoration: none;
+  width: 50%;
+}
+/*
+===============================
+Title
+===============================
+*/
+
+.title {
+  color: #ffffff;
+  text-align: center;
+  font: 300 40px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  color: #ffffff;
+  text-align: center;
+  font: 300 10px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 5px auto 15px auto;
+}
+
+/*
+===============================
+Timer Inputs
+===============================
+*/
+
+label {
+  color: #ffffff;
+  font: 300 18px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.timer-wrapper {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 48%
+}
+
+.timer-settings {
+  margin-top: 10px;
+}
+
+.inc,
+.dec,
+.save {
+  background-color: #7f8c8d;
+}
+
+.break,
+.focus {
+  width: 46px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0ebeb;
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.timer-element:focus {
+  transition: .25s;
+  outline: none;
+  background: #34495e;
+  color: #ffffff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*
+===============================
+Timer
+===============================
+*/
+
+.timer {
+  text-align: center;
+  margin: 20px auto;
+  border: 5px solid #2ecc71;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: table;
+}
+
+.timer p {
+  vertical-align: middle;
+  display: table-cell;
+  font: 400 30px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  color: #ffffff;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+/*
+===============================
+Submit
+===============================
+*/
+
+.submit {
+  display: block;
+  padding-left: 15px;
+  margin: 20px auto 0px auto;
+  border: none;
+  border-radius: 5px;
+  font: 400 30px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  background: none;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .25s;
+}
+
+#submit:focus {
+  outline: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+input[value='Start']:hover {
+  color: #27AE60;
+}
+
+input[value='Stop']:hover {
+  color: #C0392B;
+}
+
+/*
+===============================
+Volume
+===============================
+*/
+
+#volume-btn {
+  position: absolute;
+  left: 50px;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:active,
+.btn-default:visited,
+.btn-default:focus {
+    background-color: #7f8c8d;
+    border-color: #7f8c8d;
+}
+
+/*
+===============================
+Repeat/Refresh/Block/Sites
+===============================
+*/
+
+#repeat-btn {
+  position: absolute;
+  right: 50px;
+}
+
+#refresh-btn {
+  position: absolute;
+  right: 50px;
+  bottom: 60px;
+}
+
+#block-btn {
+  display: block;
+  margin: 30px auto 10px auto;
+}
+
+#sites-arrow-icon {
+  position: absolute;
+  right: 50px;
+  bottom: 175px;
+  width: 30px;
+  height: 26;
+  text-align: center;
+}
+
+.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:visited,
+.btn-info:focus {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+.form-control {
+  margin: 0 auto;
+  width: 300px;
+}
+
+textarea {
+    resize: none;
+}
+
+#save-btn {
+  position: absolute;
+  right: 60px;
+}
+/*
+===============================
+Blocked Sites Page
+===============================
+*/
+#timer-arrow-icon {
+  position: absolute;
+  left: 20px;
+  bottom: 175px;
+  width: 30px;
+  height: 26;
+  text-align: center;
+}
+
+.form-group {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-label {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.block-description {
+  color: #ffffff;
+  font: 300 12px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 10px auto;
+  line-height: 25px;
+}
+
+.blocked-header,
+.blocked-subheader,
+.blocked-paragraph {
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+  line-height: 20px;
+}
+
+.blocked-header{
+  font: 300 28px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+}
+
+.blocked-subheader{
+  margin-top: 25px;
+  font: 300 18px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+}
+
+.blocked-paragraph{
+  margin-top: 50px;
+  font: 400 18px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+}
+
+body {
+  background: #2980b9;
+  width: 420px;
+  height: 420px;
+}
+
+/*
+===============================
+Block
+===============================
+*/
+.block-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.blocked-body {
+  width: 100%;
+}

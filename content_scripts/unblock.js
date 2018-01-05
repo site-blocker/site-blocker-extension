@@ -1,5 +1,5 @@
 (function () {
-  var overlay = document.getElementById('matchu-pomodoro-extension-overlay');
+  var overlay = document.getElementById('matchu-pomodoro-extension-overlay1');
   document.body.removeChild(overlay);
 
   // Remove filters from the blocked page

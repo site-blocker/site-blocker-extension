@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro Timer</title>
+    <link href="Flat-UI/dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Flat-UI/dist/css/flat-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <h1 class="title"><img src="./Assets/logo.png"/></h1>
+    <div class="container">
+      <div class="timer-wrapper">
+        <label for="name">Break Time</label>
+        <div class="timer-settings">
+          <button class="dec button btn btn-primary btn-danger btn-xs" data-type="plus" data-field="quant[1]">
+            <span class="glyphicon glyphicon-minus"></span>
+          </button>
+          <input type="number" class="break timer-element input" id="b-in" value="5" />
+          <button class="inc button btn btn-primary btn-number btn-xs" data-type="plus" data-field="quant[1]">
+            <span class="glyphicon glyphicon-plus"></span>
+          </button>
+        </div>
+      </div>
+      <div class="timer-wrapper">
+        <label for="name">Focus Time</label>
+        <div class="timer-settings">
+          <button class="dec button btn btn-primary btn-danger btn-xs" data-type="plus" data-field="quant[1]">
+            <span class="glyphicon glyphicon-minus"></span>
+          </button>
+          <input type="number" class="focus timer-element input" id="f-in" value="25" />
+          <button class="inc button btn btn-primary btn-number btn-xs" data-type="plus" data-field="quant[1]">
+            <span class="glyphicon glyphicon-plus"></span>
+          </button>
+        </div>
+      </div>
+      <div class="timer">
+        <p id="counter">25:00</p>
+      </div>
+      <input type="submit" value="Start" id="submit" class="submit"></input>
+      <button title="Notification Sound" class="volume-on btn btn-info btn-xs" id="volume-btn">
+        <span class="glyphicon glyphicon-volume-up" id="volume-icon"></span>
+      </button>
+      <button title="Automatic/Manual Cycle Mode" class="btn btn-info btn-xs" id="repeat-btn">
+        <span class="glyphicon glyphicon-random" id="repeat-icon"></span>
+      </button>
+      <button title="Reset Timer. Toggle Between Focus and Break When In Manual Mode" class="btn btn-info btn-xs" id="refresh-btn">
+        <span class="glyphicon glyphicon-repeat" id="refresh-icon"></span>
+      </button>
+      <a title="Blocked Sites" href="./websites.html" id="sites-arrow-icon"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    </div>
+  </body>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./Flat-UI/dist/js/flat-ui.min.js"></script>
+  <script src="./Flat-UI/docs/assets/js/application.js"></script>
+  <script src="./js/moment.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/popup.js"></script>
+</html>
