@@ -1,14 +1,10 @@
 window.addEventListener('load', function(){
 
   var paragraphs = [
-    // "I'm Not Mad, I'm Just Disappointed",
-    // "Like You, fruit flies also have a short attention span",
-    // "You deserve this",
-    // "Studies show that humans now have a shorter attention span than goldfish",
-    // "I'm judging you",
-    // "Remember when you were working on that thing just now?",
-    // "Ya I hate being productive too"
-    "This website is blocked to keep you focused! If you would like to continue, please make a donation to the Trump Administration."
+   "Money was never a big motivation for me, except as a way to keep score. \n\n If want to continue to this website, donate to my campaign.",
+    "This website is blocked to keep you focused \n\n If you would like to continue, please make a donation to the Trump Administration.",
+    "I don’t make deals for the money. I’ve got much more than I’ll ever need. \n\n If want to continue to this website, donate to my campaign first. Don’t be cheap."
+    "SAD!\n\n If want to continue to this website, donate to my campaign."
   ]
 
   var message = paragraphs[Math.floor(Math.random()*paragraphs.length)]

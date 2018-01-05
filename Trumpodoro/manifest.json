@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Trumpodoro: A Trump Inspired Pomodoro Timer and Website Blocker",
+  "name": "Trumpodoro: Make Work Great Again.",
   "description": "This is an anti-procrastination extension that forces you to donate to Donald Trump’s campaign every time you log onto Facebook, Twitter & Reddit.",
 
   "version": "1.0.0",
@@ -19,6 +19,7 @@
     "scripts": ["/js/jquery.min.js", "/js/background.js", "/js/moment.js", "/js/website-background.js"],
     "persistent": true
   },
+  
 
   "content_scripts": [{
       "js": [ "/js/jquery.min.js", "/js/popup.js", "/js/websites.js"],
@@ -26,6 +27,7 @@
     }],
 
   "permissions": [
+    "tabs",
     "webRequest",
     "webRequestBlocking",
     "activeTab",

@@ -12,6 +12,7 @@ window.addEventListener('load', function(){
   var initialTime;
   var currentTime;
 
+
   var defaults = {
     'focus': ['f-in', 25],
     'break': ['b-in', 5],
@@ -22,18 +23,17 @@ window.addEventListener('load', function(){
     'fill': [1, 25, 25*60, 25*60]
   }
   var focusMessage = [
-    'Get back to working on something great!',
-    'Get in the zone!',
-    'Time to start inventing the future!',
-    'All of your power is focused on your task; there are no distractions',
-    'Put on those headphones and get lost in your work!',
+    'Nobody has better respect for intelligence than Donald Trump.',
+    'Make Being Productive Great Again!',
+    'I think I’ve made a lot of sacrifices. I work very, very hard!',
+    'You have to think anyway, so why not think big? Be productive, like me.',
   ];
   var breakMessage = [
-    'Take some time to relax, and reflect on what you\'ve worked on.',
-    'Have a zen moment.',
-    'Get away from work for a little bit and unwind.',
-    'Take some time to de-stress.',
-    'Relax your mind and consolidate the what you\'ve done'
+    'Nobody builds walls blocking time-wasting websites better than me, believe me.',
+    'I thought it would be easier to stop you from looking at time-wasting websites.',
+    'My whole life is about winning. I don’t lose often. I almost never lose. Don’t look at time-wasting sites.',
+    'Blocking you from time-wasting sites is more work than in my previous life.',
+    'Do you mind if I sit back a little? Because your breath is very bad. GET BACK TO WORK!'
   ]
 
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
@@ -273,7 +273,7 @@ window.addEventListener('load', function(){
       console.log(idBase + " created");
     })
     if (soundState){
-      var audio = new Audio('./audio/notification.mp3');
+      var audio = new Audio('./audio/notif.mp3');
       audio.play();
     }
   }

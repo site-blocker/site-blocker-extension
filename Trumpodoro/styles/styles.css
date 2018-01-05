@@ -287,6 +287,13 @@ Repeat/Refresh/Block/Sites
   width: 300px;
 }
 
+/* 
+.form-control:active,
+.form-control:visited,
+.form-control:focus{
+  border: 1px solid rgba(236, 88, 64);
+} */
+
 textarea {
     resize: none;
 }
@@ -327,12 +334,12 @@ Blocked Sites Page
 
 .block-description {
   color: #EC5840;
-  font: 300 12px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  font: 700 10px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto 10px auto;
-  line-height: 25px;
+  margin: 0 auto 5px auto;
+  line-height: 20px;
 }
 
 .blocked-header,

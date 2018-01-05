@@ -1,4 +1,6 @@
 window.addEventListener('load', function(){
+
+
   /*
   ===============================
   GLOBAL VARIABLES
@@ -289,7 +291,7 @@ window.addEventListener('load', function(){
     switch (timerState){
       case 1:
         if(percent <= 100){
-          $('.timer').css({background: "linear-gradient(to top, #2ecc71 "+percent+"%,transparent "+percent+"%,transparent 100%)"});
+          $('.timer').css({background: "linear-gradient(to top, #F3C155 "+percent+"%,transparent "+percent+"%,transparent 100%)"});
         }
         break
       case 0:
