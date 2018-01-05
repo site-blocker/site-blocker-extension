@@ -1,5 +1,5 @@
 # trumpodoro
-![alt text](https://github.com/trumpodoro/trumpodoro/raw/master/Trumpodoro/ico/Trumpo.png "Logo Title Text 1")
+![alt text](https://github.com/trumpodoro/trumpodoro/blob/master/Trumpodoro/ico/Trumpo.png "Logo Title Text 1")
 
 
 What if you could harness the power of the Donald Trump personality to focus on work? Well, now you can!
