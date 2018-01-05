@@ -131,6 +131,7 @@ label {
 .dec,
 .save {
   background-color: #FFFFFF;
+  color: #F3C155;
 }
 
 .break,
@@ -248,6 +249,7 @@ Repeat/Refresh/Block/Sites
 #repeat-btn {
   position: absolute;
   right: 50px;
+  background-color: 
 }
 
 #refresh-btn {
@@ -259,6 +261,7 @@ Repeat/Refresh/Block/Sites
 #block-btn {
   display: block;
   margin: 30px auto 10px auto;
+  background-color: #EC5840;
 }
 
 #sites-arrow-icon {
@@ -268,6 +271,7 @@ Repeat/Refresh/Block/Sites
   width: 30px;
   height: 26;
   text-align: center;
+  background-color: #EC5840;
 }
 
 .btn-info,
@@ -290,6 +294,7 @@ textarea {
 #save-btn {
   position: absolute;
   right: 60px;
+  color: #EC5840;
 }
 /*
 ===============================
@@ -316,7 +321,7 @@ Blocked Sites Page
 }
 
 .block-description {
-  color: #ffffff;
+  color: #EC5840;
   font: 300 12px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
   letter-spacing: 2px;
   text-align: center;
@@ -328,7 +333,8 @@ Blocked Sites Page
 .blocked-header,
 .blocked-subheader,
 .blocked-paragraph {
-  color: #ffffff;
+  color: #EC5840;
+  font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -338,16 +344,19 @@ Blocked Sites Page
 
 .blocked-header{
   font: 300 28px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  font-weight: bold;
 }
 
 .blocked-subheader{
   margin-top: 25px;
   font: 300 18px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  font-weight: bold;
 }
 
 .blocked-paragraph{
   margin-top: 50px;
   font: 400 18px "Lato", "Open Sans", "Helvetica Nue", sans-serif;
+  font-weight: bold;
 }
 
 body {
