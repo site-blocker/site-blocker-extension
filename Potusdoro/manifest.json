@@ -1,14 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "PotusDoro: A Pomodoro Timer and Website Blocker",
-  "description": "Provides a Pomodoro for focused time management, as well as
-    the ability to block websites to help prevent distractions while you work.",
+  "name": "Trumpodoro: A Trump Inspired Pomodoro Timer and Website Blocker",
+  "description": "This is an anti-procrastination extension that forces you to donate to Donald Trump’s campaign every time you log onto Facebook, Twitter & Reddit.",
 
-  "version": "2017.11.29",
+  "version": "1.0.0",
 
   "browser_action": {
-    "default_icon": "./ico/128.png",
+    "default_icon": "./ico/200.png",
     "default_popup": "popup.html"
   },
 
