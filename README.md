@@ -1,5 +1,3 @@
-# trumpodoro
-
 ![alt text](https://github.com/trumpodoro/trumpodoro/raw/master/Trumpodoro/ico/Trumpo.png "Logo Title Text 1")
 
 
