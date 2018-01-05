@@ -271,7 +271,7 @@ Repeat/Refresh/Block/Sites
   width: 30px;
   height: 26;
   text-align: center;
-  background-color: #EC5840;
+  color: #000000;
 }
 
 .btn-info,
@@ -294,7 +294,11 @@ textarea {
 #save-btn {
   position: absolute;
   right: 60px;
-  color: #EC5840;
+  color: #000000;
+}
+#save-btn:hover{
+  background-color: #EC5840;
+
 }
 /*
 ===============================
@@ -308,6 +312,7 @@ Blocked Sites Page
   width: 30px;
   height: 26;
   text-align: center;
+  color: #000000;
 }
 
 .form-group {
